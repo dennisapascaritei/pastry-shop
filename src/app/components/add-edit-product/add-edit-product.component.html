@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-2">
+            <form>
+                <legend>Add a new product!</legend>
+                <div class="mb-3">
+                    <label class="form-label">Product name</label>
+                    <input 
+                        type="text"
+                        class="form-control"
+                        id="produtName"
+                        placeholder="Product name"
+                        (ngModel)="product.name"
+                    >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Product description</label>
+                    <input 
+                        type="text"
+                        class="form-control"
+                        id="produtDescription"
+                        placeholder="Product description"
+                        (ngModel)="product.description"
+                    >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Product price</label>
+                    <input 
+                        type="number"
+                        class="form-control"
+                        id="produtPrice"
+                        placeholder="Product price"
+                        (ngModel)="product.price"
+                    >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Product weight</label>
+                    <input 
+                        type="number"
+                        class="form-control"
+                        id="produtWeight"
+                        placeholder="Product weight"
+                        (ngModel)="product.weight"
+                    >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Product image</label>
+                    <input 
+                        type="text"
+                        class="form-control"
+                        id="produtImageUrl"
+                        placeholder="Product image"
+                        (ngModel)="product.imageURL"
+                    >
+                </div>
+                <div class="mb-3 float-end">
+                    <button 
+                        type="button"
+                        class="btn btn-custom"
+                        (click)="addProduct(product)"
+                        >
+                        <i class="bi bi-send"></i>
+                        Submit
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

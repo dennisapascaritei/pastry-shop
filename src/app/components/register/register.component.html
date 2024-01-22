@@ -1,0 +1,17 @@
+<form [formGroup]="form" (submit)="submit()">
+    <legend class="h3 mb-3 fw-normal">Register</legend>
+    <input formControlName="email" [ngModel]="newUser.emailAddress" type="email" class="form-control" placeholder="Email" required>
+    <input formControlName="password" [ngModel]="newUser.password" type="password" class="form-control" placeholder="Password" required>
+    <input formControlName="firstName" [ngModel]="newUser.firstName" type="string" class="form-control" placeholder="Password" required>
+    <input formControlName="lastName" [ngModel]="newUser.lastName" type="string" class="form-control" placeholder="Password" required>
+    <input formControlName="role" [ngModel]="newUser.role" type="string" class="form-control" placeholder="Password" required>
+    <input formControlName="phone" [ngModel]="newUser.phone" type="string" class="form-control" placeholder="Password" required>
+    <input formControlName="county" [ngModel]="newUser.county" type="string" class="form-control" placeholder="Password" required>
+    <input formControlName="city" [ngModel]="newUser.city" type="string" class="form-control" placeholder="Password" required>
+    <input formControlName="address" [ngModel]="newUser.address" type="string" class="form-control" placeholder="Password" required>
+    <input formControlName="postCode" [ngModel]="newUser.postCode" type="string" class="form-control" placeholder="Password" required>
+
+
+    <button class="w-100 btn btn-lg btn-primary">Register</button>
+
+</form>

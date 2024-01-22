@@ -1,0 +1,69 @@
+.grid-container {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 10px;
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    overflow: hidden;
+    background-color: white;
+    box-sizing: border-box;
+
+}
+
+.grid-item-details {
+    margin-top: 1rem;
+    
+}
+
+.grid-item-details-button {
+    margin-top: auto;    
+}
+
+.grid-image {
+    height: 30rem;
+    
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropcontent {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropcontent {
+    display: block;
+  }
+  .dropbtn {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: white;
+    border: none;
+    
+  }
+
+  .icustom {
+    align-self: flex-end;
+  }
+
+ 

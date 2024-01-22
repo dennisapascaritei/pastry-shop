@@ -1,0 +1,34 @@
+<div class="grid-container">
+    <div class="grid-item">
+        <img [src]="product.imageURL" class="grid-image"/>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-details">
+            <h1>{{product.name}}</h1>
+            <h5>{{product.price | number: '1.2-2'}} RON</h5>
+        </div>
+       
+        <div class="grid-item-details">
+            <p>{{product.description}}</p>
+        </div>
+
+        <div class="dropdown" id="ingredients">
+            
+            <button class="dropbtn" (click)="expandIngredients(product.description)" >Ingredients <i class="icustom">+</i></button>
+            
+            <!-- <div class="dropcontent">
+                <p>
+                    {{product.description}}
+                </p>
+            </div> -->
+            
+        </div>
+
+        <div class="grid-item-details grid-item-details-button">                 
+            <button class="btn-custom " type="submit">
+                <i class="bi bi-cart"></i>
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+            <div class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button 
+                    class="btn btn-custom-color"
+                    type="submit">
+
+                    Search
+                </button>
+            </div>
+
+            <div class="actionList">
+                <button 
+                    class="btn btn-custom-color"
+                    type="submit"
+                    routerLink="login"
+                    *ngIf="!isAuthenticated"
+                    >
+                <i class="bi bi-box-arrow-in-right"></i>
+                Log in</button>
+
+                <button 
+                    class="btn btn-custom-color"
+                    type="submit"
+                    routerLink="register"
+                    *ngIf="!isAuthenticated"
+                    >
+                <i class="bi bi-box-arrow-in-right"></i>
+                Register</button>
+
+                <div class="dropdown">
+                    <button
+                    class="btn btn-custom-color dropbtn"
+                    type="submit"
+                    *ngIf="isAuthenticated"
+                    >
+                    <i class="bi bi-person-fill-check"></i>
+
+                    Account
+                    <div class="dropdown-content">
+                        <a href="#">Personal details</a>
+                        <a href="#">Orders</a>
+                        <a href="#">Favorites</a>
+                    </div>
+                
+                </button>
+                </div>
+                
+
+                <button
+                    class="btn btn-custom-color"
+                    type="submit"
+                    *ngIf="isAuthenticated"
+                    (click)="addToCart()">
+                    <i class="bi bi-cart"></i>
+
+                    Cart
+                </button>
+
+                <button
+                    class="btn btn-outline-danger"
+                    type="submit"
+                    *ngIf="isAuthenticated"
+                    (click)="logOut()">
+                    <i class="bi bi-box-arrow-left"></i>
+
+                    Logout
+                </button>
+
+                
+
+                
+            </div>
+        
+    </div>
+    
+</nav>

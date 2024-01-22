@@ -1,0 +1,7 @@
+/* .container {
+    height: 100%;
+} */
+router-outlet{
+    display: block;
+    height: 100%;
+}

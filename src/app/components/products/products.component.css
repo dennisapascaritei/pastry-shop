@@ -1,0 +1,36 @@
+.card-zoom:hover{
+    transform: scale(1.05);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+.grid-item {
+border: 1px solid #d0d8d8;
+border-radius: 10px;
+margin-top: 1rem;
+margin-bottom: 1rem;
+overflow: hidden;
+background-color: white;
+}
+
+.grid-item:hover{
+    transform: scale(1.05);
+}
+
+.grid-image {
+    height: 30vh;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.grid-item-details {
+    margin: 0.5rem;
+}
+
+.test {
+    display: flex;
+    justify-content: space-around;
+}

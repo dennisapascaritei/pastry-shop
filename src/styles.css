@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: scroll;
+  }
+
+
+.customNavBar {
+    background-color: #48D1CC;
+}
+
+.btn-custom {
+    border: 1px solid #48D1CC;
+    color: #48D1CC;
+    background-color: white;
+    border-radius: 5px;    
+    height: 2rem;
+    width: 100%;
+}
+
+.btn-custom:hover {
+  
+  color: white;
+  background-color: #48D1CC;
+  border-radius: 5px;    
+  height: 2rem;
+  width: 100%;
+}
+
+.btn-custom-color {
+    border-color: #48D1CC;
+    color: #48D1CC
+}
+.btn-custom-color:hover {
+  color: white;
+  background-color: #48D1CC;
+}
